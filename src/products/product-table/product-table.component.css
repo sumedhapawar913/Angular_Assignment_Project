@@ -1,0 +1,13 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border:solid 1px
+}
+
+th {
+    width: 50%;
+}
+
+td{
+    width: 100%;
+}

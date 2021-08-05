@@ -1,0 +1,11 @@
+.hide{
+    display:none;
+}
+
+table{
+    border-collapse: collapse; width: 100%; border: solid 1px;
+}
+
+td{
+    width: 50%;
+}

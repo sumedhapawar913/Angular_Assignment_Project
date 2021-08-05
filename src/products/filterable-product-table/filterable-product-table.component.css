@@ -1,0 +1,11 @@
+.fieldsetCls{
+    width: 30%;margin-left:35%; margin-right:35%;
+}
+
+table.tablCls {
+    border:solid 1px; border-collapse:collapse; width: 30%;
+  }
+
+  td{
+    width: 15%; height: 18px; border:solid 1px ;
+  }

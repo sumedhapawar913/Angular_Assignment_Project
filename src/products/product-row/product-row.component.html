@@ -1,0 +1,17 @@
+<span>product-row Component! <br></span><br>
+<table>
+    <ng-container *ngFor="let product of products; index as i">
+    
+        <tr *ngIf="i==0 || (i!=0 && product.category != products[i-1].category)">
+            <td style="width: 50%; font-weight: bold;" colspan="2">{{product.category}} </td>
+        </tr>
+        
+        <tr [class.hide]="(chkVal && !product.stocked) || (chkString!='' && strCompare(chkString,product.name))">
+            <td >
+                <span *ngIf="!product.stocked" style="color: red;">{{product.name}}</span>
+                <span *ngIf="product.stocked" style="color: black;">{{product.name}}</span>
+            </td>
+            <td >{{product.price}}</td> 
+        </tr>
+    </ng-container>
+</table>
